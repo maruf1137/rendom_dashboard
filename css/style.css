@@ -1,0 +1,24 @@
+.sidebar-wrapper,
+.sidebar-overlay,
+.close-sidebar {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.sidebar {
+  transition: all 0.5s;
+  transform: translate(-100%);
+}
+
+.show-sidebar .sidebar-overlay,
+.show-sidebar .sidebar-wrapper,
+.show-sidebar .close-sidebar {
+  opacity: 1;
+  visibility: visible;
+}
+
+.show-sidebar .sidebar {
+  transition: all 0.5s;
+  transform: translate(0);
+}
